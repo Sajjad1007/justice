@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justice</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="shortcut icon" href="./assets/business.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7cc514643c.js" crossorigin="anonymous"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            "garamond": ["EB Garamond", "serif"],
+            "poppins": ["Poppins", "serif"]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-poppins">
+  <header>
+    <!------------------------------ Navbar ------------------------------>
+    <nav class="py-1 lg:py-3 pl-4 pr-2 sm:pl-6 sm:pr-4 lg:px-10 xl:px-14 2xl:px-20 container mx-auto">
+      <div class="navbar p-0 flex justify-between items-center">
+        <div>
+          <a class="btn btn-ghost text-2xl lg:text-3xl p-0"><img src="./assets/logo-black.png" loading="lazy"
+              alt="Justice"></a>
+        </div>
+        <div class="hidden lg:flex font-poppins">
+          <ul class="flex items-center px-2 text-sm text-[#707070]">
+            <li class="xl:px-1"><a class="px-3 xl:px-4 btn btn-ghost btn-sm font-normal h-9">Home&nbsp;<i
+                  class="fa-solid fa-chevron-right"></i></a></li>
+            <li class="xl:px-1"><a class="px-3 xl:px-4 btn btn-ghost btn-sm font-normal h-9">Services&nbsp;<i
+                  class="fa-solid fa-chevron-right"></i></a>
+            </li>
+            <li class="xl:px-1"><a class="px-3 xl:px-4 btn btn-ghost btn-sm font-normal h-9">Cases&nbsp;<i
+                  class="fa-solid fa-chevron-right"></i></a>
+            </li>
+            <li class="xl:px-1"><a class="px-3 xl:px-4 btn btn-ghost btn-sm font-normal h-9">Blogs&nbsp;<i
+                  class="fa-solid fa-chevron-right"></i></a>
+            </li>
+            <li class="xl:px-1"><a class="px-3 xl:px-4 btn btn-ghost btn-sm font-normal h-9">Contact Us&nbsp;<i
+                  class="fa-solid fa-chevron-right"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center">
+          <button
+            class="hidden lg:block btn bg-[#b68c5a] hover:bg-[#b68c5a] border-none text-white hover:text-white hover:opacity-80 text-base px-6 rounded-md h-12 min-h-9 font-medium">Free
+            Consultation</button>
+          <div class="dropdown dropdown-end">
+            <button class="btn btn-square btn-ghost lg:hidden ml-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                class="inline-block h-10 w-10 stroke-current">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+              </svg>
+            </button>
+            <ul tabindex="0"
+              class="menu menu-md dropdown-content bg-base-100 rounded-box z-[1] mt-1 w-52 p-4 shadow text-[#707070]">
+              <li><a class="text-base font-normal">Home</a></li>
+              <li><a class="text-base font-normal">Services</a></li>
+              <li><a class="text-base font-normal">Cases</a></li>
+              <li><a class="text-base font-normal">Blogs</a></li>
+              <li><a class="text-base font-normal">Contact Us</a></li>
+              <li><a class="text-base font-normal">Free Consultation</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!------------------------------ Hero Section ------------------------------>
+    <section class="px-4 sm:px-6 lg:px-10 xl:px-14 2xl:px-20 container mx-auto my-2">
+      <div class="hero bg-hero bg-cover bg-center rounded-lg">
+        <div class="hero-content text-neutral-content text-center my-8 lg:my-20">
+          <div class="max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl">
+            <h1 class="mb-6 text-5xl lg:text-6xl font-bold font-garamond text-white">We Provide Effective Legal
+              Solutions</h1>
+            <p class="mb-6 text-[#e7e7e7] text-sm lg:text-sm/6 font-light">
+              Providing reliable and professional legal guidance to protect your rights. Whether it's corporate law,
+              personal disputes or legal consultations, we've got you covered.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+              <input type="text" placeholder="Search your services"
+                class="input px-5 w-full max-w-80 xl:max-w-sm text-sm text-black rounded-md" />
+              <button
+                class="btn bg-[#b68c5a] hover:bg-[#b68c5a] border-none text-white hover:text-white hover:opacity-90 text-base px-6 rounded-md h-12 min-h-9 font-medium w-28">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <!------------------------------ The Legal Practice Area ------------------------------>
+    <section class="my-20 lg:my-24 px-4 sm:px-6 lg:px-10 xl:px-14 2xl:px-20 container mx-auto">
+      <div class="max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl mx-auto text-center">
+        <h2 class="mb-4 text-3xl lg:text-4xl font-bold font-garamond text-[#414040]">The Legal Practice Area
+        </h2>
+        <p class="mb-8 text-[#707070] text-sm lg:text-sm/6 font-normal">
+          We offer expert legal solutions across various practice areas, including corporate law, family disputes,
+          criminal defense, real estate, intellectual property and more.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-80 sm:max-w-none mx-auto">
+        <div
+          class="card rounded-none hover:bg-gradient-to-b hover:from-[#e7e7e7]/50 hover:to-white hover:cursor-pointer border-b sm:border-r">
+          <figure class="px-10 pt-10">
+            <img src="./assets/business.png" loading="lazy" alt="Business" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h3 class="card-title text-2xl lg:text-3xl font-bold font-garamond text-[#414040]">Business Law</h3>
+            <p class="mt-3 mb-6 text-[#707070] text-sm lg:text-sm/6 font-normal">We provide expert legal assistance in
+              business laws, ensuring comprehensive support, strategic guidance and effective solutions tailored to your
+              needs.</p>
+            <div class="card-actions">
+              <button
+                class="btn btn-circle mb-3 border-none btn-sm text-white hover:text-white bg-[#b68c5a] hover:bg-[#b68c5a] hover:opacity-80 font-semibold"><i
+                  class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card rounded-none hover:bg-gradient-to-b hover:from-[#e7e7e7]/50 hover:to-white hover:cursor-pointer border-b lg:border-r">
+          <figure class="px-10 pt-10">
+            <img src="./assets/criminal.png" loading="lazy" alt="Criminal" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h3 class="card-title text-2xl lg:text-3xl font-bold font-garamond text-[#414040]">Criminal Law</h3>
+            <p class="mt-3 mb-6 text-[#707070] text-sm lg:text-sm/6 font-normal">We provide expert legal assistance in
+              criminal laws, ensuring comprehensive support, strategic guidance and effective solutions tailored to your
+              needs.</p>
+            <div class="card-actions">
+              <button
+                class="btn btn-circle mb-3 border-none btn-sm text-white hover:text-white bg-[#b68c5a] hover:bg-[#b68c5a] hover:opacity-80 font-semibold"><i
+                  class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card rounded-none hover:bg-gradient-to-b hover:from-[#e7e7e7]/50 hover:to-white hover:cursor-pointer border-b sm:border-r lg:border-r-0">
+          <figure class="px-10 pt-10">
+            <img src="./assets/child.png" loading="lazy" alt="Child" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h3 class="card-title text-2xl lg:text-3xl font-bold font-garamond text-[#414040]">Child Support</h3>
+            <p class="mt-3 mb-6 text-[#707070] text-sm lg:text-sm/6 font-normal">We provide expert legal assistance in
+              child supports, ensuring comprehensive support, strategic guidance and effective solutions tailored to
+              your
+              needs.</p>
+            <div class="card-actions">
+              <button
+                class="btn btn-circle mb-3 border-none btn-sm text-white hover:text-white bg-[#b68c5a] hover:bg-[#b68c5a] hover:opacity-80 font-semibold"><i
+                  class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card rounded-none hover:bg-gradient-to-b hover:from-[#e7e7e7]/50 hover:to-white hover:cursor-pointer border-b lg:border-b-0 lg:border-r">
+          <figure class="px-10 pt-10">
+            <img src="./assets/education.png" loading="lazy" alt="Education" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h3 class="card-title text-2xl lg:text-3xl font-bold font-garamond text-[#414040]">Education Law</h3>
+            <p class="mt-3 mb-6 text-[#707070] text-sm lg:text-sm/6 font-normal">We provide expert legal assistance in
+              education laws, ensuring comprehensive support, strategic guidance and effective solutions tailored to
+              your
+              needs.</p>
+            <div class="card-actions">
+              <button
+                class="btn btn-circle mb-3 border-none btn-sm text-white hover:text-white bg-[#b68c5a] hover:bg-[#b68c5a] hover:opacity-80 font-semibold"><i
+                  class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card rounded-none hover:bg-gradient-to-b hover:from-[#e7e7e7]/50 hover:to-white hover:cursor-pointer border-b sm:border-b-0 sm:border-r">
+          <figure class="px-10 pt-10">
+            <img src="./assets/divorce.png" loading="lazy" alt="Divorce" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h3 class="card-title text-2xl lg:text-3xl font-bold font-garamond text-[#414040]">Divorce Law</h3>
+            <p class="mt-3 mb-6 text-[#707070] text-sm lg:text-sm/6 font-normal">We provide expert legal assistance in
+              divorce laws, ensuring comprehensive support, strategic guidance, and effective solutions tailored to your
+              needs.</p>
+            <div class="card-actions">
+              <button
+                class="btn btn-circle mb-3 border-none btn-sm text-white hover:text-white bg-[#b68c5a] hover:bg-[#b68c5a] hover:opacity-80 font-semibold"><i
+                  class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card rounded-none hover:bg-gradient-to-b hover:from-[#e7e7e7]/50 hover:to-white hover:cursor-pointer">
+          <figure class="px-10 pt-10">
+            <img src="./assets/tax.png" loading="lazy" alt="Tax" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h3 class="card-title text-2xl lg:text-3xl font-bold font-garamond text-[#414040]">Tax Law</h3>
+            <p class="mt-3 mb-6 text-[#707070] text-sm lg:text-sm/6 font-normal">We provide expert legal assistance in
+              tax and income laws, ensuring comprehensive support, strategic guidance, and effective solutions tailored
+              to your
+              needs.</p>
+            <div class="card-actions">
+              <button
+                class="btn btn-circle mb-3 border-none btn-sm text-white hover:text-white bg-[#b68c5a] hover:bg-[#b68c5a] hover:opacity-80 font-semibold"><i
+                  class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------ What Our Clients Say ------------------------------>
+    <section class="my-20 lg:my-24 px-4 sm:px-6 lg:px-10 xl:px-14 2xl:px-20 container mx-auto">
+      <div class="max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl mx-auto text-center">
+        <h2 class="mb-4 text-3xl lg:text-4xl font-bold font-garamond text-[#414040]">What Our Clients Say
+        </h2>
+        <p class="mb-8 text-[#707070] text-sm lg:text-sm/6 font-normal">
+          Hear from our clients
+          who have experienced our commitment to justice, integrity and success firsthand with professionalism and
+          dedication.
+        </p>
+      </div>
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full py-16 lg:py-28 rounded-lg">
+          <div class="max-w-lg md:max-w-xl lg:max-w-3xl xl:max-w-4xl 2xl:max-w-5xl mx-auto">
+            <div class="bg-white rounded-full p-1 w-20 mx-auto">
+              <img src="./assets/client-1.png" loading="lazy" alt="Client 1">
+            </div>
+            <div class="px-4 sm:px-0">
+              <h4 class="font-semibold text-white font-garamond text-2xl mt-6 text-center">Awlad Hossain</h4>
+              <p class="text-[#e7e7e7] text-sm lg:text-sm/6 font-medium text-center">Software Engineer</p>
+              <p class="text-[#e7e7e7] text-sm lg:text-sm/6 font-light text-center mt-6">I was going through a complex
+                legal dispute. From the very first consultation, the team was
+                incredibly professional, knowledgeable and supportive. They took the time to explain all the possible
+                outcomes and the best strategy for my situation. Throughout the entire process, they
+                were always available to answer my questions and kept me informed every step of the way.</p>
+            </div>
+          </div>
+          <div
+            class="hidden lg:flex absolute left-0 right-0 top-[45%] sm:top-1/2 sm:mx-4 lg:mx-8 -translate-y-1/2 transform justify-between">
+            <a href="#slide3" class="btn btn-ghost btn-circle text-[#e7e7e7]"><i
+                class="fa-solid fa-chevron-left"></i></a>
+            <a href="#slide2" class="btn btn-ghost btn-circle text-[#e7e7e7]"><i
+                class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full py-16 lg:py-28 rounded-lg">
+          <div class="max-w-lg md:max-w-xl lg:max-w-3xl xl:max-w-4xl 2xl:max-w-5xl mx-auto">
+            <div class="bg-white rounded-full p-1 w-20 mx-auto">
+              <img src="./assets/client-2.png" loading="lazy" alt="Client 2">
+            </div>
+            <div class="px-4 sm:px-0">
+              <h4 class="font-semibold text-white font-garamond text-2xl mt-6 text-center">Mahbuba Akter</h4>
+              <p class="text-[#e7e7e7] text-sm lg:text-sm/6 font-medium text-center">Doctor</p>
+              <p class="text-[#e7e7e7] text-sm lg:text-sm/6 font-normal text-center mt-6">I was going through a complex
+                legal dispute. From the very first consultation, the team was
+                incredibly professional, knowledgeable and supportive. They took the time to explain all the possible
+                outcomes and the best strategy for my situation. Throughout the entire process, they
+                were always available to answer my questions and kept me informed every step of the way.</p>
+            </div>
+          </div>
+          <div
+            class="absolute hidden lg:flex left-0 right-0 top-[45%] sm:top-1/2 sm:mx-4 lg:mx-8 -translate-y-1/2 transform justify-between">
+            <a href="#slide1" class="btn btn-ghost btn-circle text-[#e7e7e7]"><i
+                class="fa-solid fa-chevron-left"></i></a>
+            <a href="#slide3" class="btn btn-ghost btn-circle text-[#e7e7e7]"><i
+                class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full py-16 lg:py-28 rounded-lg">
+          <div class="max-w-lg md:max-w-xl lg:max-w-3xl xl:max-w-4xl 2xl:max-w-5xl mx-auto">
+            <div class="bg-white rounded-full p-1 w-20 mx-auto">
+              <img src="./assets/client-3.png" loading="lazy" alt="Client 3">
+            </div>
+            <div class="px-4 sm:px-0">
+              <h4 class="font-semibold text-white font-garamond text-2xl mt-6 text-center">Humayra Jannat</h4>
+              <p class="text-[#e7e7e7] text-sm lg:text-sm/6 font-medium text-center">Graphics Designer</p>
+              <p class="text-[#e7e7e7] text-sm lg:text-sm/6 font-light text-center mt-6">I was going through a complex
+                legal dispute. From the very first consultation, the team was
+                incredibly professional, knowledgeable and supportive. They took the time to explain all the possible
+                outcomes and the best strategy for my situation. Throughout the entire process, they
+                were always available to answer my questions and kept me informed every step of the way.</p>
+            </div>
+          </div>
+          <div
+            class="absolute hidden lg:flex left-0 right-0 top-[45%] sm:top-1/2 sm:mx-4 lg:mx-8 -translate-y-1/2 transform justify-between">
+            <a href="#slide2" class="btn btn-ghost btn-circle text-[#e7e7e7]"><i
+                class="fa-solid fa-chevron-left"></i></a>
+            <a href="#slide1" class="btn btn-ghost btn-circle text-[#e7e7e7]"><i
+                class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------ Frequently Asked Questions ------------------------------>
+    <section class="my-20 lg:my-24 px-4 sm:px-6 lg:px-10 xl:px-14 2xl:px-20 container mx-auto">
+      <div class="max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl mx-auto text-center">
+        <h2 class="mb-4 text-3xl lg:text-4xl font-bold font-garamond text-[#414040]">Frequently Asked Questions
+        </h2>
+        <p class="mb-8 text-[#707070] text-sm lg:text-sm/6 font-normal">
+          Legal matters can be complex, and we're here to help. Below, you'll find answers to some of the most common
+          questions about our services and legal processes.
+        </p>
+      </div>
+      <div class="hero max-w-lg md:max-w-xl lg:max-w-none mx-auto">
+        <div class="hero-content p-0 flex-col lg:flex-row-reverse gap-10 xl:gap-14">
+          <img src="./assets/faq.png" loading="lazy" alt="Big Question Mark" class="rounded-lg lg:max-w-[45%]" />
+          <div class="flex flex-col gap-4 lg:gap-3 xl:gap-5">
+            <div class="collapse collapse-plus bg-base-200 rounded-md lg:p-2 xl:p-4">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-bold font-garamond text-[#414040]">01. Are application fee waivers
+                available?
+              </div>
+              <div class="collapse-content">
+                <p class="text-[#707070] text-sm lg:text-sm/6 font-normal">Application fee waivers may be available
+                  depending on the type of legal service and your financial situation. Some legal processes, such as
+                  court filings or immigration applications, may offer fee waivers for individuals who meet specific
+                  income or hardship criteria.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200 rounded-md lg:p-2 xl:p-4">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-bold font-garamond text-[#414040]">02. Are application fee waivers
+                available?
+              </div>
+              <div class="collapse-content">
+                <p class="text-[#707070] text-sm lg:text-sm/6 font-normal">Application fee waivers may be available
+                  depending on the type of legal service and your financial situation. Some legal processes, such as
+                  court filings or immigration applications, may offer fee waivers for individuals who meet specific
+                  income or hardship criteria.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200 rounded-md lg:p-2 xl:p-4">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-bold font-garamond text-[#414040]">03. Are application fee waivers
+                available?
+              </div>
+              <div class="collapse-content">
+                <p class="text-[#707070] text-sm lg:text-sm/6 font-normal">Application fee waivers may be available
+                  depending on the type of legal service and your financial situation. Some legal processes, such as
+                  court filings or immigration applications, may offer fee waivers for individuals who meet specific
+                  income or hardship criteria.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200 rounded-md lg:p-2 xl:p-4">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-bold font-garamond text-[#414040]">04. Are application fee waivers
+                available?
+              </div>
+              <div class="collapse-content">
+                <p class="text-[#707070] text-sm lg:text-sm/6 font-normal">Application fee waivers may be available
+                  depending on the type of legal service and your financial situation. Some legal processes, such as
+                  court filings or immigration applications, may offer fee waivers for individuals who meet specific
+                  income or hardship criteria.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------ Contact With Us ------------------------------>
+    <section class="my-20 lg:my-24 px-4 sm:px-6 lg:px-10 xl:px-14 2xl:px-20 container mx-auto">
+      <div class="max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl mx-auto text-center">
+        <h2 class="mb-4 text-3xl lg:text-4xl font-bold font-garamond text-[#414040]">Contact With Us
+        </h2>
+        <p class="mb-8 text-[#707070] text-sm lg:text-sm/6 font-normal">
+          Have questions or need expert legal guidance? Our team is here to help. Whether you require legal
+          consultation, case evaluation or general inquiries, feel
+          free to reach out.
+        </p>
+      </div>
+      <div class="hero max-w-lg md:max-w-xl lg:max-w-none mx-auto">
+        <div class="hero-content flex-col lg:flex-row p-0 w-full gap-10 xl:gap-14">
+          <div class="grid grid-cols-2 w-full">
+            <div class="card rounded-none bg-base-200 py-10 border-r border-b">
+              <figure>
+                <img src="./assets/address.png" loading="lazy" alt="Address" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center p-3 pb-0">
+                <h3 class="card-title text-xl font-bold font-garamond text-[#414040]">Address</h3>
+                <p class="mt-2 text-[#707070] text-sm lg:text-sm/6 font-normal">108/B Adam Street<br>New York-535022
+                </p>
+              </div>
+            </div>
+            <div class="card rounded-none bg-base-200 py-10 border-l border-b">
+              <figure>
+                <img src="./assets/call.png" loading="lazy" alt="Call" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center p-3 pb-0">
+                <h3 class="card-title text-xl font-bold font-garamond text-[#414040]">Call Us</h3>
+                <p class="mt-2 text-[#707070] text-sm lg:text-sm/6 font-normal">+88 01750 00 00 00<br>+88 01750 00 00
+                  00
+                </p>
+              </div>
+            </div>
+            <div class="card rounded-none bg-base-200 py-10 border-t border-r">
+              <figure>
+                <img src="./assets/email.png" loading="lazy" alt="Email" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center p-3 pb-0">
+                <h3 class="card-title text-xl font-bold font-garamond text-[#414040]">Email Us</h3>
+                <p class="mt-2 text-[#707070] text-sm lg:text-sm/6 font-normal">info@gmail.com<br>info@gmail.com</p>
+              </div>
+            </div>
+            <div class="card rounded-none bg-base-200 py-10 border-l border-t">
+              <figure>
+                <img src="./assets/clock.png" loading="lazy" alt="Clock" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center p-3 pb-0">
+                <h3 class="card-title text-xl font-bold font-garamond text-[#414040]">Working Hours</h3>
+                <p class="mt-2 text-[#707070] text-sm lg:text-sm/6 font-normal">Mon-Fri: 9am-5pm<br>Sat-Sun: 9am-1pm
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card w-full">
+            <form class="card-body p-0 gap-4 lg:gap-5">
+              <div class="form-control">
+                <input type="text" placeholder="Your Name"
+                  class="input w-full rounded-md py-7 px-5 text-sm text-black bg-base-200" />
+              </div>
+              <div class="form-control">
+                <input type="email" placeholder="Your Email"
+                  class="input w-full rounded-md py-7 px-5 text-sm text-black bg-base-200" />
+              </div>
+              <div class="form-control">
+                <input type="text" placeholder="Subject"
+                  class="input w-full rounded-md py-7 px-5 text-sm text-black bg-base-200" />
+              </div>
+              <textarea class="textarea rounded-md px-5 py-4 h-40 lg:h-[8.8rem] w-full text-sm text-black bg-base-200"
+                placeholder="Your Message"></textarea>
+              <button type="button"
+                class="btn bg-[#b68c5a] hover:bg-[#b68c5a] border-none text-white hover:text-white hover:opacity-80 text-base rounded-md h-14 min-h-9 font-medium">Send
+                Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-black">
+    <div
+      class="py-20 lg:py-24 px-4 sm:px-6 lg:px-10 xl:px-14 2xl:px-20 container mx-auto text-[#e7e7e7] text-sm lg:text-sm/6 font-light grid gap-10 lg:gap-6 xl:gap-16 grid-cols-1 sm:grid-cols-2 lg:grid-cols-6">
+      <aside class="max-w-lg sm:col-span-2">
+        <div>
+          <a class="btn btn-ghost text-2xl lg:text-3xl p-0"><img src="./assets/logo-white.png" loading="lazy"
+              alt="Justice"></a>
+        </div>
+        <p class="mt-4">
+          We are dedicated to provide reliable and comprehensive legal solutions tailored to meet your unique needs.
+        </p>
+      </aside>
+      <nav>
+        <h6 class="text-white text-xl font-bold font-garamond mb-5">Useful Links</h6>
+        <div class="flex flex-col gap-2">
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">About Us</a>
+          <a class="link link-hover">Cases</a>
+          <a class="link link-hover">Blogs</a>
+          <a class="link link-hover">Contact Us</a>
+        </div>
+      </nav>
+      <nav class="md:col-span-1">
+        <h6 class="text-white text-xl font-bold font-garamond mb-5">Contact Now</h6>
+        <div class="flex flex-col gap-2">
+          <p>108/B Adam Street<br>New York-535022</p>
+          <p>+88 01750 00 00 00<br>+88 01750 00 00 00</p>
+          <p>info@gmail.com<br>info@gmail.com</p>
+        </div>
+      </nav>
+      <form class="max-w-lg sm:col-span-2 md:col-span-2">
+        <h6 class="text-white text-xl font-bold font-garamond mb-5">Subscribe</h6>
+        <p>Subscribe for getting our latest news &amp; articles. We will not send you spam mails.</p>
+        <fieldset class="form-control w-full mt-4">
+          <div class="join">
+            <input type="email" placeholder="Email Address"
+              class="input w-full rounded-md text-sm font-light text-black join-item focus:border-transparent focus:outline-0 focus:ring-0" />
+            <button type="button"
+              class="btn bg-[#b68c5a] hover:bg-[#b68c5a] border-none text-white hover:text-white hover:opacity-90 text-lg h-12 min-h-9 join-item rounded-md px-6"><i
+                class="fa-regular fa-paper-plane"></i></button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </footer>
+</body>
+
+</html>
